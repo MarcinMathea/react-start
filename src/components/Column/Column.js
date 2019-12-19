@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 class Column extends React.Component {
     static propTypes = {
-        headerText: PropTypes.node,
+        headerText: PropTypes.string,
     }
 
     render() {
         return (
             <section className={styles.component}>
-    <h3 className={styles.title}>{props.headerText}</h3>
+                <h3 className={styles.title}>{this.props.headerText}</h3>
             </section>
         )
     }
