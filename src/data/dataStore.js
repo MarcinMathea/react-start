@@ -141,11 +141,27 @@ const cards = [
   },
 ];
 
+const info = [
+  {
+    title: 'Info',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+];
+
+const faq = [
+  {
+    title: 'faq',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+];
+
 const initialStoreData = {
-  app: {...pageContents},
+  app: { ...pageContents },
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
+  info: [...info],
+  faq: [...faq],
 };
 
 export default initialStoreData;
