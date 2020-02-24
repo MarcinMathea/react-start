@@ -11,7 +11,7 @@ class Home extends React.Component {
   }
   render() {
     const { title, subtitle, lists } = this.props;
-    
+
     return (
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
@@ -19,6 +19,8 @@ class Home extends React.Component {
         {lists.map(listData => (
           <ListLink key={listData.id} {...listData} />
         ))}
+        <div>
+        </div>
       </main>
     );
   }
