@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from '../Home/HomeContainer';
 import Info from '../Info/Info';
-import FAQ from '../FAQ/FAQ';
+import Faq from '../Faq/Faq';
 import {BrowserRouter, Route} from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
 import {AnimatedSwitch} from 'react-router-transition';
@@ -20,7 +20,7 @@ const App = () => (
       >
         <Route exact path='/' component={Home} />
         <Route exact path='/info' component={Info} />
-        <Route exact path='/FAQ' component={FAQ} />
+        <Route exact path='/FAQ' component={Faq} />
         <Route exact path="/list/:id" component={List} />
         <Route exact path="/search/:id" component={SearchResults} />
       </AnimatedSwitch>
